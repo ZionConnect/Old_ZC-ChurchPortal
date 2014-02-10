@@ -1,0 +1,40 @@
+<h1>This is the sign-up page</h1>
+
+<div>
+    <input id="name" type="text" placeholder="Church Name" data-ng-model="church.name"/>
+    <br/>
+    <input id="email" type="email" placeholder="Church Email" data-ng-model="church.email"/>
+    <br/>
+    <input id="address" type="text" placeholder="Address" data-ng-model="church.address.street"/>
+    <br />
+    <input id="city" type="text" placeholder="City" data-ng-model="church.address.city"/>
+    <br />
+    <label for="state">State: </label>
+    <select id="state" data-ng-model="church.address.state">
+        <option>AL</option>
+        <option>AK</option>
+        <option>AZ</option>
+        <option>AR</option>
+        <option>CA</option>
+        <option>CO</option>
+        <option>CT</option>
+        <option>DE</option>
+        <option>FL</option>
+    </select>
+    <br />
+    <input id="zip" type="text" placeholder="Zip" data-ng-model="church.address.zip"/>
+    <br />
+    <input id="phone" type="tel" placeholder="Phone Number" data-ng-model="church.phone"/>
+    <br />
+    <button type="button" class="btn btn-primary" data-ng-click="createAccount()">Create Account</button>
+    <br />
+    <br />
+    <p>Church Name: {{church.name}}</p>
+    <p>Church Email: {{church.email}}</p>
+    <p>Church Address: {{church.address.street}}</p>
+    <p>Church City: {{church.address.city}}</p>
+    <p>Church State: {{church.address.state}}</p>
+    <p>Church Zip: {{church.address.zip}}</p>
+    <p>Church Phone: {{church.phone}}</p>
+
+</div>
